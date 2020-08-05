@@ -26,5 +26,4 @@ export default class ThemeSwitcher extends React.Component {
       </button>
     );
   }
-
 }
