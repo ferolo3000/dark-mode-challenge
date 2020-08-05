@@ -2,29 +2,17 @@ import React from 'react';
 import ThemeSwitcher from "../partials/ThemeSwitcher";
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props) {
-      this.state = {
-        bgColor: false
-      }
-      this.toggleBgColor = this.toggleBgColor.bind(this)
-    }
-  }
-
-  toggleBgColor = () => {
-    this.setState({bgColor: true})
-  }
 
     render() {
         return (
-            <div className={this.state.bgColor ? app : dark-mode}>
+            <div className="app">
 
                 <div className="level header">
                     <div className="title-container">
                         <div className="morningscore-avatar"></div>
                         <h1 className="title">Dark Mode Challenge</h1>
                     </div>
-                    <ThemeSwitcher onClick={this.toggleBgColor()}/>
+                    <ThemeSwitcher/>
                 </div>
 
 

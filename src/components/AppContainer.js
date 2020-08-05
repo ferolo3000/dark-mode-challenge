@@ -5,11 +5,10 @@ export default class AppContainer extends React.Component {
     render() {
         const {children} = this.props;
 
-        return (
-            <div className="app-container">
-                {children}
-            </div>
-        );
+          return (
+              <div className="app-container" id="parent">
+                  {children}
+              </div>
+          );
     }
-
 }
